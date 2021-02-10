@@ -1,0 +1,18 @@
+.send__block {
+  width: 50rem;
+  height: 32rem;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1.5rem 3rem rgba($color-black, 0.3);
+  overflow: hidden;
+}
+
+.textarea {
+  outline: none;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: inherit;
+  font-family: inherit;
+  resize: none;
+}

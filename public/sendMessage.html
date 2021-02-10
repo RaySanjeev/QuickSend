@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>QuickSend</title>
+  </head>
+  <body>
+    <nav class="section__nav">
+      <div class="nav__div--1">
+        <div class="logo">
+          <img
+            src="./img/logo-white.png"
+            alt="logo-image"
+            class="logo__image"
+          />
+        </div>
+      </div>
+      <div class="nav__div--2">
+        <a href="#" class="nav__home">Home</a>
+      </div>
+    </nav>
+
+    <section class="contact__main">
+      <div class="send__block">
+        <div class="info__block--heading">
+          <h2 class="contact__heading">send message</h2>
+        </div>
+        <div class="send__text--block">
+          <form action="#" method="POST" class="message__form">
+            <textarea
+              name="message"
+              class="textarea"
+              cols="40"
+              rows="5"
+              autofocus
+              placeholder="Enter Your Message Here."
+              required
+            ></textarea>
+            <div class="contact__send">
+              <input type="submit" class="btn send__text" value="send" />
+              <!-- <button class="btn send__text">send message</button> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__logo--box">
+        <div class="logo__box">
+          <img
+            src="./img/logo-white.png"
+            alt="company-logo"
+            class="footer-logo"
+          />
+        </div>
+      </div>
+      <div class="footer__content--box">
+        <p class="footer__para">&copy; Sanjeev and Foundation</p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -177,6 +177,7 @@ body {
   min-height: 85vh;
   display: flex;
   justify-content: center;
+  padding: 5rem;
   align-items: center;
   background-color: #f6f6f6; }
 
@@ -195,6 +196,15 @@ body {
     grid-template-columns: 1fr;
     grid-row-gap: 1rem;
     padding: 3rem 2rem 1rem 2rem; }
+
+.send__main {
+  padding: 5rem 7rem; }
+
+.send__text--block {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .contact__container {
   display: flex;
@@ -247,3 +257,20 @@ body {
   .contact__send--btn {
     text-decoration: none;
     font-family: inherit; }
+
+.send__block {
+  width: 50rem;
+  height: 32rem;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+  overflow: hidden; }
+
+.textarea {
+  outline: none;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: inherit;
+  font-family: inherit;
+  resize: none; }
