@@ -1,0 +1,51 @@
+.section__nav {
+  background-color: $color-primary-dark;
+  padding: 1rem 15rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.nav__div {
+  &--1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateX(5rem);
+  }
+
+  &--2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.logo {
+  width: 10rem;
+  &__image {
+    width: 100%;
+  }
+}
+
+.nav__home:link,
+.nav__home:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: inherit;
+  letter-spacing: 1px;
+  color: $color-font-input;
+  backface-visibility: hidden;
+  transition: all 0.3s;
+}
+
+.nav__home:hover {
+  transform: translateY(-3px);
+  color: $color-white;
+}
+
+.nav__home:active {
+  transform: translateY(0);
+  color: $color-white;
+}

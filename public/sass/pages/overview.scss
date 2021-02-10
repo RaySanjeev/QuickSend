@@ -1,0 +1,17 @@
+.contact__container {
+  display: flex;
+  align-items: center;
+
+  &--name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    width: 50%;
+    font-family: inherit;
+    color: inherit;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-left: 2rem;
+    text-align: center;
+  }
+}

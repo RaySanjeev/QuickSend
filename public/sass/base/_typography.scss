@@ -1,0 +1,21 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $color-font;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
