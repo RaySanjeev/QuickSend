@@ -1,0 +1,38 @@
+.footer {
+  background-color: $color-primary-dark;
+  padding: 3rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.footer__logo--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__box {
+  width: 15rem;
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+.footer__content--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__para {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $color-font-input;
+  letter-spacing: 2px;
+}
+
+.footer__para:hover {
+  color: #fff;
+}

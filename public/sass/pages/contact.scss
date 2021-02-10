@@ -1,0 +1,49 @@
+.contact__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--label,
+  &--input {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 2rem;
+    padding: 1rem;
+  }
+
+  &--label {
+    width: 38%;
+  }
+}
+
+.contact__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--label,
+  &--input {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 2rem;
+    padding: 1rem;
+  }
+
+  &--label {
+    width: 38%;
+  }
+}
+
+.contact__send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+  &--btn {
+    text-decoration: none;
+    font-family: inherit;
+  }
+}

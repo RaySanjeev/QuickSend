@@ -1,0 +1,33 @@
+.contact__main {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-grey-theme;
+}
+
+.info__block {
+  width: 50rem;
+  height: 30rem;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1.5rem 3rem rgba($color-black, 0.3);
+  overflow: hidden;
+
+  &--heading {
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+  }
+
+  &--content {
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+
+    padding: 3rem 2rem 1rem 2rem;
+  }
+}
