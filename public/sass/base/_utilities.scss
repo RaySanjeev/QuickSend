@@ -9,3 +9,14 @@
 .mb-large {
   margin-bottom: 6rem;
 }
+
+.hidden {
+  display: none;
+}
+
+.active {
+  transform: translateY(-3px);
+  background-image: none !important;
+  background-color: #0278ae;
+  box-shadow: 0 1.5rem 3rem rgba($color-black, 0.5) !important;
+}

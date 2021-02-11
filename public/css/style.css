@@ -45,6 +45,15 @@ body {
 .mb-large {
   margin-bottom: 6rem; }
 
+.hidden {
+  display: none; }
+
+.active {
+  transform: translateY(-3px);
+  background-image: none !important;
+  background-color: #0278ae;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5) !important; }
+
 .btn {
   padding: 1rem 3rem;
   font-size: 1.5rem;
@@ -172,6 +181,33 @@ body {
   grid-template-rows: 7rem;
   grid-auto-flow: row;
   grid-auto-rows: 7rem; }
+
+.message__content {
+  display: grid;
+  grid-template-columns: 70rem;
+  grid-template-rows: 5rem;
+  grid-auto-flow: row;
+  grid-auto-rows: 7rem; }
+
+.message__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr; }
+  .message__container--block {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .message__container--item {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: inherit;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center; }
+  .message__container--head {
+    color: #3e3e41;
+    text-transform: uppercase; }
 
 .contact__main {
   min-height: 85vh;
