@@ -1,0 +1,49 @@
+extends base  
+  
+block content
+  section.overview__main
+    .overview__main--sidebar
+      button.btn.btn__blue.sidebar__btn--1.active
+        | contact list
+      button.btn.btn__blue.sidebar__btn--2 messages sent
+    .overview__content--messages.hidden
+      .overview__main--content
+        h2.mb-medium.overview__heading candidates
+        .main__content
+          .contact__container
+            p.contact__container--name sanjeev ray
+            button.btn.btn__blue more details
+          .contact__container
+            p.contact__container--name sumeet singh
+            button.btn.btn__blue more details
+          .contact__container
+            p.contact__container--name subhash chandra
+            button.btn.btn__blue more details
+    .overview__content--block
+      .overview__main--content
+        h2.mb-medium.overview__heading messages sent
+        .message__content
+          .message__container
+            .message__container--block
+              p.message__container--item.message__container--head
+                | name
+            .message__container--block
+              p.message__container--item.message__container--head
+                | date
+            .message__container--block
+              p.message__container--item.message__container--head
+                | otp
+          .message__container
+            .message__container--block
+              p.message__container--item sanjeev ray
+            .message__container--block
+              p.message__container--item friday 11 feb 2021
+            .message__container--block
+              p.message__container--item 458916
+          .message__container
+            .message__container--block
+              p.message__container--item anand mishrikotkar
+            .message__container--block
+              p.message__container--item friday 11 feb 2021
+            .message__container--block
+              p.message__container--item 985346
