@@ -6,20 +6,19 @@ block content
       button.btn.btn__blue.sidebar__btn--1.active
         | contact list
       button.btn.btn__blue.sidebar__btn--2 messages sent
-    .overview__content--messages.hidden
+    .overview__content--messages
       .overview__main--content
         h2.mb-medium.overview__heading candidates
         .main__content
-          .contact__container
-            p.contact__container--name sanjeev ray
-            button.btn.btn__blue more details
-          .contact__container
-            p.contact__container--name sumeet singh
-            button.btn.btn__blue more details
-          .contact__container
-            p.contact__container--name subhash chandra
-            button.btn.btn__blue more details
-    .overview__content--block
+          each user in users
+            .contact__container
+              - let name;
+              - const nameArray = user.name.split(' ');
+              - if(nameArray.length >= 3) name = `${nameArray[0]} ${nameArray[2]}`;
+              - else name = nameArray.join(' ');
+              p.contact__container--name #{name}
+              a.btn.detailsBtn(href=`/${user.slug}?num=${user.number}`) more details
+    .overview__content--block.hidden
       .overview__main--content
         h2.mb-medium.overview__heading messages sent
         .message__content

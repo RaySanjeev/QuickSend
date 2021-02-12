@@ -1,0 +1,20 @@
+extends base
+
+block content
+  section.contact__main
+    .info__block
+      .info__block--heading
+        h2.contact__heading contact info
+      .info__block--content
+        - let name;
+        - const nameArray = user.name.split(' ');
+        - if(nameArray.length >= 3) name = `${nameArray[0]} ${nameArray[2]}`;
+        - else name = nameArray.join(' ');
+        .contact__name
+          p.contact__name--label client name :
+          p.contact__name--input #{name}
+        .contact__number
+          p.contact__number--label phone number :
+          p.contact__number--input #{user.number}
+        .contact__send
+          a.btn.contact__send--btn(href='#') send message

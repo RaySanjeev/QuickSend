@@ -59,6 +59,7 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
+  text-decoration: none;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   outline: none;

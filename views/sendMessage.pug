@@ -1,0 +1,13 @@
+extends base
+
+block content
+  section.contact__main
+    .send__block
+      .info__block--heading
+        h2.contact__heading send message
+      .send__text--block
+        form.message__form(action='#' method='POST')
+          textarea.textarea(name='message' cols='40' rows='5' autofocus='' placeholder='Enter Your Message Here.' required='')
+          .contact__send
+            input.btn.send__text(type='submit' value='send')
+          // <button class="btn send__text">send message</button>

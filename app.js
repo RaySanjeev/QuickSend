@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const compression = require('compression');
 
 const viewRouter = require('./routes/viewRoutes');
+const userRouter = require('./routes/userRouter');
 const globalErrorHandler = require('./controllers/errorController');
 
 const app = express();

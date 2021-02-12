@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const slugify = require('slugify');
 
-const userSchmema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
   name: {
     type: String,
     trim: true,
@@ -11,8 +12,14 @@ const userSchmema = new mongoose.Schema({
     required: [true, 'Please provide your number'],
     unique: true,
   },
+  slug: String,
 });
 
-const User = mongoose.model('User', userSchmema);
+userSchema.pre('save', function (next) {
+  this.slug = slugify(this.name);
+  next();
+});
+
+const User = mongoose.model('User', userSchema);
 
 module.exports = User;
