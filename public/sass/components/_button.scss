@@ -20,6 +20,13 @@
   backface-visibility: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 0.7rem 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+
 .btn:hover {
   transform: translateY(-3px);
   background-image: none;
@@ -36,4 +43,11 @@
 .sidebar__btn--2 {
   padding: 1.5rem 3rem;
   margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar__btn--1,
+  .sidebar__btn--2 {
+    padding: 1rem 2rem;
+  }
 }
