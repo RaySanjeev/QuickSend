@@ -34,11 +34,11 @@ block content
                 | otp
           .message__container
             each message in messages
-              - const date = new Date(message.)
+              - const date = new Date(message.time).toLocaleString();
               .message__container--block
                 p.message__container--item #{message.name}
               .message__container--block
-                p.message__container--item friday 11 feb 2021
+                p.message__container--item #{date}
               .message__container--block
                 p.message__container--item #{message.otp}
           

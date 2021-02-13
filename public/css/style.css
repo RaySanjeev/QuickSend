@@ -138,6 +138,7 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   font-family: inherit;
+  outline: none;
   letter-spacing: 1px;
   color: #cdc9c3;
   backface-visibility: hidden;

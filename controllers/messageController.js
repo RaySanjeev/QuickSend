@@ -13,10 +13,12 @@ exports.createOTP = (req, res, next) => {
 const addMessages = catchAsync(async (user, otp) => {
   const name = user.name;
   const id = user._id;
+  console.log(new Date().toDateString());
 
   const message = await Message.create({
     name,
     userID: id,
+    time: new Date(),
     otp,
   });
 });
@@ -62,7 +64,7 @@ exports.sendMessage = catchAsync(async (req, res, next) => {
 });
 
 exports.getMessages = catchAsync(async (req, res, next) => {
-  const messages = await Message.find();
+  const messages = await Message.find().sort({ time: -1 });
 
   req.messages = messages;
   next();

@@ -22,30 +22,28 @@ if (sendMessageBtn) {
 }
 
 const btnFunctions = function () {
-  contactList.classList.toggle('hidden');
-  messagesList.classList.toggle('hidden');
-  contactListBtn.classList.toggle('active');
-  messagesSentBtn.classList.toggle('active');
+  contactList.classList.add('hidden');
+  messagesList.classList.add('hidden');
+  contactListBtn.classList.remove('active');
+  messagesSentBtn.classList.remove('active');
 };
 
 if (contactListBtn) {
   contactListBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    // contactList.classList.toggle('hidden');
-    // messagesList.classList.toggle('hidden');
-    // contactListBtn.classList.toggle('active');
-    // messagesSentBtn.classList.toggle('active');
+
     btnFunctions();
+    contactList.classList.remove('hidden');
+    contactListBtn.classList.add('active');
   });
 }
 
 if (messagesSentBtn) {
   messagesSentBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    // contactList.classList.toggle('hidden');
-    // messagesList.classList.toggle('hidden');
-    // contactListBtn.classList.toggle('active');
-    // messagesSentBtn.classList.toggle('active');
+
     btnFunctions();
+    messagesList.classList.remove('hidden');
+    messagesSentBtn.classList.add('active');
   });
 }

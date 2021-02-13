@@ -8,7 +8,7 @@ block content
       .send__text--block
         form.message__form
           - const message = `Hey there!. Welcome to the the QuickSend family. Your OTP is ${otp}:`
-          textarea.textarea(name='message' cols='40' rows='5' autofocus='' required='')
+          textarea.textarea(cols='40' rows='5' readonly)
             | #{message}
           .contact__send
             button.btn.send__text(data-user-Id = user._id data-otp = otp) send message
