@@ -12,7 +12,6 @@ export const sendText = async (userID, otp) => {
         otp,
       },
     });
-    console.log(res);
     if (res.data.status === 'success') {
       showAlert('success', res.data.message);
       setTimeout(() => {

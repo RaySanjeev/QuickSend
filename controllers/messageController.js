@@ -13,7 +13,6 @@ exports.createOTP = (req, res, next) => {
 const addMessages = catchAsync(async (user, otp) => {
   const name = user.name;
   const id = user._id;
-  console.log(new Date().toDateString());
 
   const message = await Message.create({
     name,
@@ -32,7 +31,6 @@ const vonage = new Vonage({
 
 exports.sendMessage = catchAsync(async (req, res, next) => {
   const user = await User.findById(req.body.userID);
-  console.log(req.body);
 
   const from = `QuickSend`;
   const to = user.number;
@@ -40,7 +38,6 @@ exports.sendMessage = catchAsync(async (req, res, next) => {
 
   vonage.message.sendSms(from, to, text, (err, responseData) => {
     if (err) {
-      console.log(err);
       return res.status(500).json({
         status: 'error',
         err,

@@ -8460,7 +8460,6 @@ var sendText = /*#__PURE__*/function () {
 
           case 3:
             res = _context.sent;
-            console.log(res);
 
             if (res.data.status === 'success') {
               (0, _alert.showAlert)('success', res.data.message);
@@ -8469,11 +8468,11 @@ var sendText = /*#__PURE__*/function () {
               }, 1500);
             }
 
-            _context.next = 11;
+            _context.next = 10;
             break;
 
-          case 8:
-            _context.prev = 8;
+          case 7:
+            _context.prev = 7;
             _context.t0 = _context["catch"](0);
 
             if (_context.t0.response.data.status === 'failed') {
@@ -8483,12 +8482,12 @@ var sendText = /*#__PURE__*/function () {
               }, 2500);
             }
 
-          case 11:
+          case 10:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 8]]);
+    }, _callee, null, [[0, 7]]);
   }));
 
   return function sendText(_x, _x2) {
@@ -8770,7 +8769,6 @@ if (sendMessageBtn) {
     e.preventDefault();
     var userID = sendMessageBtn.dataset.userId;
     var otp = sendMessageBtn.dataset.otp;
-    console.log(userID, otp);
     sendMessageBtn.textContent = 'Processing...';
     (0, _sendText.sendText)(userID, otp);
   });

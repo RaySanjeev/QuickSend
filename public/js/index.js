@@ -15,7 +15,6 @@ if (sendMessageBtn) {
     e.preventDefault();
     const userID = sendMessageBtn.dataset.userId;
     const otp = sendMessageBtn.dataset.otp;
-    console.log(userID, otp);
     sendMessageBtn.textContent = 'Processing...';
     sendText(userID, otp);
   });
