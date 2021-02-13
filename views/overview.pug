@@ -3,10 +3,10 @@ extends base
 block content
   section.overview__main
     .overview__main--sidebar
-      button.btn.btn__blue.sidebar__btn--1.active
+      button.btn.sidebar__btn--1.active
         | contact list
-      button.btn.btn__blue.sidebar__btn--2 messages sent
-    .overview__content--messages
+      button.btn.sidebar__btn--2 messages sent
+    .overview__content--contacts
       .overview__main--content
         h2.mb-medium.overview__heading candidates
         .main__content
@@ -17,8 +17,8 @@ block content
               - if(nameArray.length >= 3) name = `${nameArray[0]} ${nameArray[2]}`;
               - else name = nameArray.join(' ');
               p.contact__container--name #{name}
-              a.btn.detailsBtn(href=`/${user.slug}?num=${user.number}`) more details
-    .overview__content--block.hidden
+              a.btn.detailsBtn(href=`/${user.number}`) more details
+    .overview__content--messages.hidden
       .overview__main--content
         h2.mb-medium.overview__heading messages sent
         .message__content
@@ -33,16 +33,12 @@ block content
               p.message__container--item.message__container--head
                 | otp
           .message__container
-            .message__container--block
-              p.message__container--item sanjeev ray
-            .message__container--block
-              p.message__container--item friday 11 feb 2021
-            .message__container--block
-              p.message__container--item 458916
-          .message__container
-            .message__container--block
-              p.message__container--item anand mishrikotkar
-            .message__container--block
-              p.message__container--item friday 11 feb 2021
-            .message__container--block
-              p.message__container--item 985346
+            each message in messages
+              - const date = new Date(message.)
+              .message__container--block
+                p.message__container--item #{message.name}
+              .message__container--block
+                p.message__container--item friday 11 feb 2021
+              .message__container--block
+                p.message__container--item #{message.otp}
+          

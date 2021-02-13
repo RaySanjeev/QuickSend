@@ -17,4 +17,4 @@ block content
           p.contact__number--label phone number :
           p.contact__number--input #{user.number}
         .contact__send
-          a.btn.contact__send--btn(href='#') send message
+          a.btn.contact__send--btn(href=`/${user.number}/sendMessage`) send message

@@ -18,9 +18,7 @@ exports.getAllUsers = catchAsync(async (req, res, next) => {
 });
 
 exports.getUser = catchAsync(async (req, res, next) => {
-  let number;
-  if (isFinite(req.query.num)) number = req.query.num;
-  const user = await User.findOne({ number });
+  const user = await User.findOne({ number: req.params.num });
 
   req.user = user;
   next();

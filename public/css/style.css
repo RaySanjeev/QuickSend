@@ -86,6 +86,29 @@ body {
   padding: 1.5rem 3rem;
   margin-bottom: 5rem; }
 
+.alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9999;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1.6rem 15rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25); }
+
+.alert--success {
+  background-color: #20bf6b; }
+
+.alert--error {
+  background-color: #eb4d4b; }
+
 .section__nav {
   background-color: #0278ae;
   padding: 1rem 15rem;
@@ -219,7 +242,7 @@ body {
   background-color: #f6f6f6; }
 
 .info__block {
-  width: 50rem;
+  width: 55rem;
   height: 30rem;
   background-color: #fff;
   border-radius: 7px;
@@ -270,7 +293,10 @@ body {
     margin-right: 2rem;
     padding: 1rem; }
   .contact__name--label {
-    width: 38%; }
+    width: 45%;
+    text-align: end; }
+  .contact__name--input {
+    width: 60%; }
 
 .contact__number {
   display: flex;
@@ -284,7 +310,10 @@ body {
     margin-right: 2rem;
     padding: 1rem; }
   .contact__number--label {
-    width: 38%; }
+    width: 45%;
+    text-align: end; }
+  .contact__number--input {
+    width: 60%; }
 
 .contact__send {
   display: flex;
