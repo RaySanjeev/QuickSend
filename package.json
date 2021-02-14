@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "start": "node server.js",
     "start:dev": "nodemon server.js",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "build:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
-    "build:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
   },
   "repository": {
     "type": "git",
@@ -39,8 +41,11 @@
     "cookie-parser": "^1.4.5",
     "dotenv": "^5.0.1",
     "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "express-rate-limit": "^5.2.5",
     "mongoose": "^5.11.15",
     "pug": "^3.0.0",
-    "slugify": "^1.4.6"
+    "slugify": "^1.4.6",
+    "xss-clean": "^0.1.1"
   }
 }
